@@ -1,0 +1,30 @@
+Performs the IntroSort algorithm
+(this is a beta version)
+========================================
+
+# Example using jQuery
+
+  var compare_function = function(val1, val2){
+    return val1 < val2;
+  };
+  var switching_function = function(val1, index1, val2, index2 ){
+    console.info( val1 + ' is now at position: ' + index1 );
+    console.info( val2 + ' is now at position: ' + index2 );
+  }
+  $.introSort( array, compare_function, switching_function );
+
+
+# Example using no js framework
+
+  var compare_function = function(val1, val2){
+    return val1 < val2;
+  };
+  var switching_function = function(val1, index1, val2, index2 ){
+    console.info( val1 + ' is now at position: ' + index1 );
+    console.info( val2 + ' is now at position: ' + index2 );
+  }
+  
+  introSort( array, compare_function, switching_function );
+
+
+Thanks to: Ralph Unden (http://ralphunden.net/) for the algorithm
