@@ -111,10 +111,14 @@
 
 	introSort.size_threshold = 16;
 
-  if ( window.jQuery )
-    window.jQuery.introSort = introSort;
-  else
-    window.introSort = introSort;
+  if ( typeof window !== "undefined" ){
+    if ( window.jQuery )
+      window.jQuery.introSort = introSort;
+    else
+      window.introSort = introSort;
+  } else if ( typeof global !== "undefined" ){
+    global.introSort = introSort;
+  }
 
 })();
 
