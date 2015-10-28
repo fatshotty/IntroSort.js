@@ -1,0 +1,26 @@
+{
+  "name": "introsort.js",
+  "main": "introsort.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/fatshotty/IntroSort.js",
+  "authors": [
+    "FatShotty <fat@fatshotty.net>"
+  ],
+  "description": "Sort array with introsort algorithm",
+  "moduleType": [
+    "es6"
+  ],
+  "keywords": [
+    "introsort",
+    "sort",
+    "array"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
